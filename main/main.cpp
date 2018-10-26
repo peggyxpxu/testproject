@@ -1,3 +1,5 @@
+//version 1.0
+//git 1.0
 #include<iostream>
 #include<vector>
 #include<stack>

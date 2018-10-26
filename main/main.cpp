@@ -14,16 +14,14 @@ struct TreeNode{
  TreeNode(int x): val(x),left(NULL),right(NULL){}
 };
 
-//非递归的先序遍历
-void PreOrder(TreeNode* T)
-{
 
-}
+
 //非递归的先序遍历
 void PreOrder(TreeNode* T)
 {
 	stack<TreeNode*> s;
 	TreeNode* p = T;
+	TreeNode* p = T1;
 	while(p||!s.empty())
 	{
 		while(p!=NULL)

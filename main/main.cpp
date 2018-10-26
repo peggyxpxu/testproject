@@ -10,23 +10,8 @@ struct TreeNode{
  TreeNode *right;
  TreeNode(int x): val(x),left(NULL),right(NULL){}
 };
-//构建二叉树
-void createTree(TreeNode* &T)
-{
-	char ch;
-	if((ch=getchar())=='#')
-	{
-		T = NULL;
-	}
-	else
-	{
-		int a;
-		a = ch -'0';
-		T = new TreeNode(a);
-		createTree(T->left);
-		createTree(T->right);
-	}
-}
+
+
 //非递归的先序遍历
 void PreOrder(TreeNode* T)
 {

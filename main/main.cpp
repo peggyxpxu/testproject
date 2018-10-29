@@ -1,65 +1,11 @@
-//version 1.0
-//git 1.0
+//version 2.0
+//git 2.0
 // this is master branch
 #include<iostream>
 #include<vector>
 #include<stack>
 #include<queue>
 #include<string>
-using namespace std;
-struct TreeNode{
- int val;
- TreeNode *left;
- TreeNode *right;
- TreeNode(int x): val(x),left(NULL),right(NULL){}
-};
-
-
-
-//非递归的先序遍历
-void PreOrder(TreeNode* T)
-{
-	stack<TreeNode*> s;
-	TreeNode* p = T;
-	TreeNode* p = T1;
-	while(p||!s.empty())
-	{
-		while(p!=NULL)
-		{
-			cout<<p->val<<" ";
-			s.push(p);
-			p = p->left;
-		}
-		if(!s.empty())
-		{
-			p = s.top();
-			s.pop();
-			p = p->right;
-		}
-	
-	}
-}
-//非递归中序遍历
-void MidOrder(TreeNode* T)
-{
-   stack<TreeNode*> s;
-   TreeNode *p = T;
-   while(p||!s.empty())
-   {
-	 while(p)
-	 {
-		 s.push(p);
-		 p = p->left;
-	 }
-	 if(!s.empty())
-	 {
-		 p = s.top();
-		 cout<<p->val<<" ";
-		 s.pop();
-		 p = p->right;
-	 } 
-   }
-}
 //! 非递归后序遍历
 void PostOrder(TreeNode* T)
 {
